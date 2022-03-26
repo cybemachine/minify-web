@@ -2,6 +2,7 @@
     "name": "serve-all",
     "main": "./index.js",
     "version": "1.1.0",
+    "license": "MIT",
     "dependencies": {
         "mime": "^3.0.0"
     },
