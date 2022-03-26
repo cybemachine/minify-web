@@ -1,1 +1,12 @@
-{"name":"static-server","main":"./index.js","dependencies":{"express-serve-static-core":"^0.1.1","mime":"^3.0.0"},"devDependencies":{"@types/mime":"^2.0.3","@types/node":"^17.0.23"}}
+{
+    "name": "serve-all",
+    "main": "./index.js",
+    "version": "1.0.0",
+    "dependencies": {
+        "mime": "^3.0.0"
+    },
+    "devDependencies": {
+        "@types/mime": "^2.0.3",
+        "@types/node": "^17.0.23"
+    }
+}
