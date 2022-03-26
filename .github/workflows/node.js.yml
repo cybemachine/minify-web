@@ -1,6 +1,8 @@
 name: Node.js CI
 
 on:
+  schedule:
+    - cron: '0 * 1 * 0'
   push:
     branches: [ main ]
   pull_request:
@@ -24,10 +26,7 @@ jobs:
         cache: 'npm'
 
     - name: install
-      run: npm i
-
-    - name: tsc
-      uses: icrawl/action-tsc@v1
+      run: npm ci
 
     - name: Commit files
       run: |

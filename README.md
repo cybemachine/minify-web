@@ -1,1 +1,1 @@
-doc found in github project url
+docs in => https://cybemachine.github.io/static-server/
