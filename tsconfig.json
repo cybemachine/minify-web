@@ -1,0 +1,9 @@
+{
+    "include": ["./index.ts"],
+    "compilerOptions": {
+        "target": "ES3",
+        "module": "commonjs",
+        "declaration": true,
+        "sourceMap": true
+    }
+}
