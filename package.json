@@ -1,4 +1,8 @@
 {
 "name": "static-server",
-"main": "./index.js"
+"main": "./index.js",
+"dependencies": {
+    "mime": "^3.0.0",
+    "express-serve-static-core": "^0.1.1"
+}
 }
