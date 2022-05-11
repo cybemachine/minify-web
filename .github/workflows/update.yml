@@ -40,8 +40,7 @@ jobs:
             echo "config add"
             git commit -am "AutoUpdate"
             echo "commit add"
-            git remote add origin https://github.com/cybemachine/static-server
-            git push origin main
+            git push https://github.com/cybemachine/static-server.git main
         fi
 
     - name: Push changes
