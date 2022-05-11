@@ -26,19 +26,23 @@ jobs:
 
     - name: Commit files
       run: |
-git status --porcelain > check.txt
-git ls-files --other --exclude-standard --directory >> check.txt
+        git status --porcelain > check.txt
+        git ls-files --other --exclude-standard --directory >> check.txt
+        echo "testing status"
 
-if [ -f "check.txt" ]; then
-    rm -rf check.txt
-    echo "found change commiting"
-    git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-    git config --local user.name "github-actions[bot]"
-    git add *
-    git commit -am "AutoUpdate"
-    git remote add origin https://github.com/cybemachine/
-    git push origin main
-fi
+        if [ -f "check.txt" ]; then
+            rm -rf check.txt
+            echo "found change commiting"
+            git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            echo "config add"
+            git add *
+            echo "config add"
+            git commit -am "AutoUpdate"
+            echo "commit add"
+            git remote add origin https://github.com/cybemachine/static-server
+            git push origin main
+        fi
 
     - name: Push changes
       uses: ad-m/github-push-action@master
