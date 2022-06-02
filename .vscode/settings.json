@@ -1,0 +1,23 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/yarn.lock": true,
+        "**/.gitignore": true,
+        "**/dist": true,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "**/@types": true,
+    },
+    "logFileHighlighter.customPatterns": [
+        {
+            "pattern": "DEFAULT",
+            "foreground": "#0063a5"
+        }
+    ]
+}

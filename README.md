@@ -1,1 +1,0 @@
-docs in => https://cybemachine.github.io/static-server/
